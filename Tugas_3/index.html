@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desa Wisata Pulesari</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f4f4;color:#292929}.container{width:min(1100px,94%);margin:auto}.top-title{font-size:27px;font-weight:700;margin:25px 0 14px}.tagline{font-size:12px;color:#777;text-align:right;margin-bottom:5px}.hero{height:220px;position:relative;overflow:hidden;background:#2e573b}.hero img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.76)}.hero-text{position:absolute;left:22px;bottom:18px;color:white;text-shadow:1px 2px 5px #222}.hero-text h1{font-family:Georgia,serif;font-size:clamp(26px,4vw,44px);margin:0 0 5px;font-style:italic}.hero-text p{margin:0;font-size:clamp(14px,2vw,21px);font-weight:bold}.nav{display:flex;flex-wrap:wrap;background:#f58232;margin-bottom:20px}.nav a{padding:13px 14px;color:#fff;text-decoration:none;font-size:12px;font-weight:bold}.nav a:hover,.nav a.active{background:#a74c17}.layout{display:grid;grid-template-columns:minmax(0,2fr) minmax(230px,1fr);gap:22px}.packages{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.package{background:white;box-shadow:0 1px 5px #ddd}.package img{width:100%;height:180px;object-fit:cover;display:block}.package-content{padding:12px}.date{font-size:11px;color:#777;margin-bottom:8px}.package h2{font-size:16px;margin:0 0 8px;line-height:1.35}.package p{font-size:13px;line-height:1.55;margin:0;color:#555}.sidebar{min-width:0}.search{display:flex;gap:5px;margin:7px 0 20px}.search input{width:100%;min-width:0;padding:8px;border:1px solid #ddd}.search button{border:0;background:#e8e8e8;padding:8px 12px;cursor:pointer}.video-title{background:#234b50;color:white;padding:10px;font-size:14px}.video{position:relative;aspect-ratio:16/9;background:#222}.video iframe{width:100%;height:100%;border:0}.sidebar-note{font-size:13px;color:#555;line-height:1.5;margin-top:12px}.footer{text-align:center;color:#777;font-size:12px;padding:28px 0 18px}
+@media(max-width:700px){.hero{height:170px}.nav a{padding:10px;font-size:11px}.layout{grid-template-columns:1fr}.packages{grid-template-columns:1fr 1fr}.package img{height:140px}.sidebar{margin-top:8px}}
+@media(max-width:440px){.packages{grid-template-columns:1fr}.package img{height:190px}.top-title{font-size:23px}}
+</style>
+</head>
+<body>
+<main class="container">
+  <div class="top-title">Alun Alun Majalengka</div>
+  <div class="tagline">Tempat Santai</div>
+  <header class="hero">
+    <img src="gambar/foto1.jpg" alt="Pemandangan alam hijau">
+    <div class="hero-text"><h1>Kelurahan Majalengka</h1><p>Taman Kota Di Majalengka</p></div>
+  </header>
+  <nav class="nav" aria-label="Menu utama">
+    <a class="active" href="#beranda">BERANDA</a><a href="#about">ABOUT</a><a href="#objek">OBJEK</a><a href="#fasilitas">FASILITAS</a><a href="#galeri">GALERI</a>
+  </nav>
+  <section class="layout" id="beranda">
+    <div class="packages" id="paket">
+      <article class="package">
+        <img src="gambar/WhatsApp Image 2026-10-09 at 8.48.54 PM.jpeg" alt="Taman Alun Alun">
+        <div class="package-content"><div class="date">◉ 08 September 2026</div><h2>Taman Alun Alun Majalengka</h2><p>Nikmati Udara Segar Di Sore Hari Bersama Keluarga Mu</p></div>
+      </article>
+      <article class="package">
+        <img src="gambar/WhatsApp Image 2026-10-09 at 8.48.55 PM.jpeg" alt="Perpohonan">
+        <div class="package-content"><div class="date">◉ 08 September 2026</div><h2>Pohon Pohon Yang Sejuk</h2><p>Tempat Yang Cocok Untuk Bersantai Di Sore Hari</p></div>
+      </article>
+      <article class="package">
+        <img src="gambar/WhatsApp Image 2026-10-09 at 9.29.46 PM.jpeg" alt="Sore Di Alun Alun Majalengka">
+        <div class="package-content"><div class="date">◉ 08 Oktober 2026</div><h2>Menikmati Sore Haro</h2><p>Lingkungan Sekitar Yang Begitu Sejuk</p></div>
+      </article>
+      <article class="package">
+        <img src="gambar/WhatsApp Image 2026-10-09 at 8.48.55 PM (1).jpeg" alt="Tengah Alun Alun">
+        <div class="package-content"><div class="date">◉ 08 Oktober 2026</div><h2>Alun Alun Majalengka</h2><p>Tempat Bersantai Di Sore Hari</p></div>
+      </article>
+    </div>
+    <aside class="sidebar">
+      <form class="search" onsubmit="event.preventDefault(); cariPaket();"><input id="searchInput" type="search" placeholder="Cari paket wisata..." aria-label="Cari paket wisata"><button type="submit">Cari</button></form>
+      <div class="video-title">Video Aktivitas Wisata</div>
+      <div class="video"><iframe src="gambar/WhatsApp Video 2026-10-09 at 8.49.10 PM.mp4" title="Video wisata alam dari YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+      <p class="sidebar-note">Cocok Orang Yang Pengen Santai Santai Tapi Tidak Tau Tempat</p>
+    </aside>
+  </section>
+  <footer class="footer">© 2026 Desa Wisata Pulesari | Jelajahi Alam, Nikmati Budaya</footer>
+</main>
+<script>
+function cariPaket(){
+  const kata=document.getElementById('searchInput').value.toLowerCase().trim();
+  document.querySelectorAll('.package').forEach(p=>{
+    p.style.display=p.innerText.toLowerCase().includes(kata)?'block':'none';
+  });
+}
+</script>
+</body>
+</html>
